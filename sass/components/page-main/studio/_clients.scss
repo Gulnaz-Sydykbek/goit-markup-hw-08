@@ -1,0 +1,70 @@
+.clients-wrapper {
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
+}
+
+.regular-clients {
+	margin-bottom: 30px;
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
+}
+
+.clients-list-icons {
+	@extend %flex-center;
+
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -30px;
+		margin-left: -30px;
+	}
+}
+
+.clients-icons {
+	height: 90px;
+
+	@media screen and (max-width: 767px) {
+		flex-basis: calc(100% / 2 - 30px);
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		flex-basis: calc(100% / 3 - 30px);
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 170px;
+
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+}
+
+.clients-link {
+	@extend %flex-center;
+
+	@extend %size;
+	border: 1px solid $icon-color;
+	box-sizing: border-box;
+	border-radius: 4px;
+	fill: $icon-color;
+	transition-property: color, fill;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border: 1px solid $dark-color;
+		fill: $dark-color;
+	}
+}

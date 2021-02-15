@@ -1,0 +1,31 @@
+.menu-contacts-position {
+	@media screen and (max-width: 767px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.menu-contacts {
+	@media screen and (max-width: 767px) {
+		&:not(:first-child) {
+			padding-left: 10px;
+		}
+
+		&:not(:last-child) {
+			padding-right: 10px;
+			border-right: 1px solid $form-input-border;
+		}
+	}
+}
+
+.menu-contacts-link {
+	@media screen and (max-width: 767px) {
+		font-size: 18px;
+		line-height: 1.222;
+		color: $dark-color;
+	}
+}

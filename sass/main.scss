@@ -1,0 +1,24 @@
+@import "./utils/variables";
+@import "./utils/placeholders";
+
+@import "./components/common/body";
+@import "./components/common/logo";
+@import "./components/common/contacts";
+
+@import "./components/page-header/header";
+@import "./components/page-header/modal-menu";
+@import "./components/page-header/nav";
+@import "./components/page-header/menu-contacts";
+
+@import "./components/page-main/studio/main-section/headline";
+@import "./components/page-main/studio/main-section/modal";
+@import "./components/page-main/studio/main-section/form-field";
+@import "./components/page-main/studio/description";
+@import "./components/page-main/studio/images";
+@import "./components/page-main/studio/our-team";
+@import "./components/page-main/studio/clients";
+
+@import "./components/page-footer/footer";
+@import "./components/page-footer/footer-form";
+@import "./components/page-main/portfolio/portfolio";
+@import "./components/page-main/portfolio/grid";

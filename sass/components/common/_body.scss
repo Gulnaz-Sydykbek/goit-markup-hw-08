@@ -1,0 +1,79 @@
+body {
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+body.modal-open {
+	@media screen and (max-width: 767px) {
+		overflow: hidden;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.166;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $first-color;
+}
+
+h3 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.list-no-style {
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	@media screen and (min-width: 480px) {
+		width: 480px;
+	}
+
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
+}

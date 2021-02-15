@@ -1,0 +1,125 @@
+.our-team-wrapper {
+	background-color: $background-light-color;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
+}
+
+.our-team {
+	margin-bottom: 30px;
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
+}
+
+.our-masters-item {
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -30px;
+		margin-left: -30px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
+}
+
+.list-of-team {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
+	background-color: $second-color;
+
+	@media screen and (max-width: 767px) {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+			max-width: 450px;
+		}
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: calc(100% / 2 - 30px);
+		margin-top: 30px;
+		margin-left: 30px;
+		max-width: 354px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		&:not(:last-child) {
+			margin-right: 30px;
+			max-width: 270px;
+		}
+	}
+}
+
+.second-team-wrapper {
+	padding-top: 30px;
+	padding-bottom: 24px;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+.our-master {
+	margin-bottom: 10px;
+
+	text-align: center;
+	font-weight: 500;
+	font-size: $minor-font-size;
+	line-height: 1.188;
+	letter-spacing: 0.03em;
+	color: $first-color;
+}
+
+.calling {
+	margin-bottom: 16px;
+
+	font-size: $minor-font-size;
+	line-height: 1.188;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $light-color;
+}
+
+.icons-of-masters {
+	@extend %flex-center;
+}
+
+.list-of-icons {
+	width: 44px;
+	height: 44px;
+
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+
+.link-of-team-icons {
+	@extend %flex-center;
+
+	@extend %size;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	background-color: $second-color;
+	fill: $icon-color;
+	transition-property: color, fill;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background-color: $dark-color;
+		fill: $second-color;
+	}
+}
+
+.team-icon {
+	width: 20px;
+	height: 20px;
+}

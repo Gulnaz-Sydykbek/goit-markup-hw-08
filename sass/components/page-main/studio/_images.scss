@@ -1,0 +1,44 @@
+.img-wrapper {
+	padding-top: 47px;
+	padding-bottom: 94px;
+
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
+}
+
+.our-action {
+	margin-bottom: 50px;
+}
+
+.picture-item {
+	display: flex;
+}
+
+.list-of-picture {
+	position: relative;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.studio-img-wrapper {
+	position: absolute;
+	bottom: 0;
+	@extend %flex-center;
+
+	width: 370px;
+	height: 70px;
+	background-color: $img-wrapper-color;
+}
+
+.studio-img-description {
+	font-weight: 700;
+	font-size: $main-font-size;
+	line-height: 1.143;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: $second-color;
+}

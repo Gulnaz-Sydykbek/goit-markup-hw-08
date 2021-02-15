@@ -1,0 +1,100 @@
+.connection {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 64px;
+	}
+
+	@media screen and (max-width: 1199px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+	}
+}
+
+.connection-link {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 32px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+}
+
+.header-link {
+	color: $light-color;
+	fill: $light-color;
+
+	@media screen and (max-width: 767px) {
+		font-size: 24px;
+		line-height: 1.167;
+	}
+}
+
+.link-icon {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-right: 10px;
+	}
+}
+
+.item-link-tel {
+	@media screen and (max-width: 767px) {
+		margin-bottom: 32px;
+		order: -1;
+	}
+}
+
+.header-link-tel {
+	color: $light-color;
+	fill: $light-color;
+
+	@media screen and (max-width: 767px) {
+		font-size: 34px;
+		line-height: 1.176;
+		color: $dark-color;
+	}
+}
+
+.address {
+	margin-top: 20px;
+
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: $main-font-size;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+	color: $second-color;
+}
+
+.footer-item {
+	margin-top: 9px;
+}
+
+.footer-link {
+	font-size: $main-font-size;
+	line-height: 1.714;
+	letter-spacing: 0.03em;
+	color: $footer-conection-color;
+	transition-property: color;
+	transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: $dark-color;
+	}
+}
