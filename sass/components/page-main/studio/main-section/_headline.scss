@@ -24,7 +24,7 @@
 	}
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 490px) {
 	.main-section {
 		background-image: linear-gradient($overlay-img-color, $overlay-img-color),
 			url("../img/Headline-img/Header2-768.jpg");
@@ -42,7 +42,7 @@
 	}
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 770px) {
 	.main-section {
 		background-image: linear-gradient($overlay-img-color, $overlay-img-color),
 			url("../img/Headline-img/Header3-1600.jpg");
