@@ -4,7 +4,7 @@
 	}
 
 	@media screen and (max-width: 479px) {
-		margin-bottom: 17%;
+		margin-bottom: 16%;
 	}
 
 	@media screen and (max-width: 1199px) {
@@ -53,8 +53,12 @@
 
 .item-link-tel {
 	@media screen and (max-width: 767px) {
-		margin-bottom: 10%;
+		margin-bottom: 32px;
 		order: -1;
+	}
+
+	@media screen and (max-width: 479px) {
+		margin-bottom: 8%;
 	}
 }
 
