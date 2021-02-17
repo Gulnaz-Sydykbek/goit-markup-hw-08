@@ -1,4 +1,8 @@
 .main-item {
+	@media screen and (max-height: 500px) {
+		margin-bottom: 10%;
+	}
+
 	@media screen and (min-width: 768px) {
 		display: flex;
 		flex-wrap: wrap;
