@@ -347,6 +347,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
+    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
     -webkit-transition-property: -webkit-transform;
