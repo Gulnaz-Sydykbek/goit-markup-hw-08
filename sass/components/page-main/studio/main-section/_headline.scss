@@ -1,8 +1,10 @@
 .main-section {
 	padding-top: 118px;
 	padding-bottom: 118px;
+	height: 400px;
 	text-align: center;
 	background-repeat: no-repeat;
+	background-position: center;
 	background-color: $background-dark-color;
 	background-image: linear-gradient($overlay-img-color, $overlay-img-color), url("../img/Headline-img/Header1-480.jpg");
 	background-size: cover;
@@ -10,6 +12,7 @@
 	@media screen and (min-width: 1200px) {
 		padding-top: 200px;
 		padding-bottom: 200px;
+		height: 600px;
 	}
 }
 
